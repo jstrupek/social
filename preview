@@ -1,0 +1,18 @@
+"<div style='border: 1px solid #dfe1e5; border-radius: 8px; padding: 16px; width: 500px; font-family: Arial, sans-serif; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);'>
+  <div style='display: flex; align-items: center; margin-bottom: 12px;'>
+    <img src='" & MID(ARRAYJOIN({Profile_Picture}, ", "), FIND("(", ARRAYJOIN({Profile_Picture}, ", ")) + 1, FIND(")", ARRAYJOIN({Profile_Picture}, ", ")) - FIND("(", ARRAYJOIN({Profile_Picture}, ", ")) - 1) & "' alt='Profile Picture' style='width: 48px; height: 48px; border-radius: 50%; margin-right: 12px;'>
+    <div>
+      <div style='font-weight: bold; font-size: 16px; color: #0a66c2;'>" & {User_Name} & "</div>
+      <div style='font-size: 14px; color: #666;'>" & {Job_Title} & "</div>
+    </div>
+  </div>
+  <div style='font-size: 16px; color: #333; margin-bottom: 12px;'>" & {Post_Text} & "</div>
+  <div style='margin-bottom: 12px;'>
+    <img src='" & MID(ARRAYJOIN({Post_Image}, ", "), FIND("(", ARRAYJOIN({Post_Image}, ", ")) + 1, FIND(")", ARRAYJOIN({Post_Image}, ", ")) - FIND("(", ARRAYJOIN({Post_Image}, ", ")) - 1) & "' alt='Post Image' style='width: 100%; border-radius: 8px;'>
+  </div>
+  <div style='display: flex; justify-content: space-around; border-top: 1px solid #dfe1e5; padding-top: 8px; margin-top: 8px;'>
+    <button style='background: none; border: none; color: #0a66c2; font-size: 14px; cursor: pointer;'>Like</button>
+    <button style='background: none; border: none; color: #0a66c2; font-size: 14px; cursor: pointer;'>Comment</button>
+    <button style='background: none; border: none; color: #0a66c2; font-size: 14px; cursor: pointer;'>Share</button>
+  </div>
+</div>"
